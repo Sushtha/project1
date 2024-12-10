@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>about me</title>
+	<style type="text/css">
+		body{
+				background: url(harry1.jpg);
+			font-family: sans-serif;
+			margin: 0px;
+			padding: 0px;
+		}
+		ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: pink;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color:white;
+}
+		.container{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 2px;	
+		}
+		.image{
+			width: 100%;
+			text-align: center;
+		}
+		.image img{
+			max-width: 50%;
+			height: auto;
+		}
+		.description{
+			width: 55%;
+		}
+.loader {
+  width: 40px;
+  aspect-ratio: 1;
+  color: #f03355;
+  position: relative;
+  background: radial-gradient(10px,currentColor 94%,#0000);
+}
+.loader:before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background:
+    radial-gradient(9px at bottom right,#0000 94%,currentColor) top    left,
+    radial-gradient(9px at bottom left ,#0000 94%,currentColor) top    right,
+    radial-gradient(9px at top    right,#0000 94%,currentColor) bottom left,
+    radial-gradient(9px at top    left ,#0000 94%,currentColor) bottom right;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  animation: l18 1.5s infinite cubic-bezier(0.3,1,0,1);
+}
+@keyframes l18 {
+   33%  {inset:-10px;transform: rotate(0deg)}
+   66%  {inset:-10px;transform: rotate(90deg)}
+   100% {inset:0    ;transform: rotate(90deg)}
+}
+
+	</style>
+</head>
+<body>
+	<ul>
+		<li><a href="index.html">HOME</a></li>
+		<li><a href="gallery.html">PHOTOS</li>
+		<li><a href="#">ABOUT ME</a></li>
+		<li><a href="game.html">Game</a></li>
+		<li><a href="loginform.html">LOGIN</a></li>
+		<li><a href="resume.html">RESUME</a></li>
+	</ul>
+	<div class="container">
+		<div class="image">
+			<img src="./images/s1.jpg" alt="no appropriate image" n>
+		</div>
+		<div class="loader"></div>
+		
+	
+<div class="description">
+	<ol>
+		<li>Name: SUSHAN KAFLE</li><br>
+		<li>E-mail:kuzanaokiji@gmail.com</li><br>
+		<li>Phone no: 9876543210</li><br>
+	</ul>
+	 <p>As a 17-year-old boy, I would describe myself as a curious and creative individual. I have a passion for learning and exploring new things, especially in the fields of art and music. In my free time, I enjoy drawing, painting, and playing the piano,guitar etc. I am also a keen reader and enjoy getting lost in the pages of a good book. I am a friendly and empathetic person and I enjoy helping others and making new friends. At college, I am a hard-working student and take pride in my academic achievements. I have aspirations of one day pursuing a career in the field of science and technology too.<p>
+	 
+</div>
+</div>
+</body>
+</html>

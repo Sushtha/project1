@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sushan Kafle - Resume</title>
+   <style type="text/css">
+       /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('your-background-image-url.jpg') no-repeat center center/cover;
+    color: #fff;
+    line-height: 1.6;
+    padding-top: 50px; /* Ensure content is not hidden under fixed navbar */
+}
+
+h1, h2 {
+    color: #ffcc00;
+}
+
+h2 {
+    margin-top: 20px;
+    text-decoration: underline;
+}
+
+/* Navigation Bar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.navbar ul li a:hover {
+    background-color: #ffcc00;
+    color: black;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+/* Flexbox Layout for Content and Image */
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.info-left {
+    width: 60%;
+}
+
+.info-right {
+    width: 35%;
+    padding-left: 20px;
+}
+
+.profile-image {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Sections */
+section {
+    margin-bottom: 30px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+   </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Photos</a></li>
+                <li><a href="about me.html">About Me</a></li>
+                <li><a href="game.html">Game</a></li>
+                <li><a href="loginform.html">Login</a></li>
+                <li><a href="#">Resume</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="container">
+        <div class="content">
+            <div class="info-left">
+                <h1>Sushan Kafle</h1>
+                <p>Email: sushandkafle@gmail.com</p>
+                <p>Address: Kathmandu, Nepal</p>
+
+                <section class="education">
+                    <h2>Education</h2>
+                    <ul>
+                        <li><strong>BLE (2077)</strong> from Om Education Academy — 4.0 GPA</li>
+                        <li><strong>SEE (2079)</strong> from Om Education Academy — 3.75 GPA</li>
+                        <li><strong>+2 (2080/81)</strong> from National School of Science</li>
+                    </ul>
+                </section>
+
+                <section class="skills">
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>Web Design with <strong>HTML</strong> & <strong>CSS</strong></li>
+                        <li>Basic <strong>JavaScript</strong></li>
+                        <li><strong>Responsive Web Design</strong> (Completed Online Course from freeCodeCamp)</li>
+                        <li>Good at <strong>Various Sports</strong></li>
+                        <li>Strong <strong>Communication Skills</strong></li>
+                        <li>Proficient in <strong>Singing and Dancing</strong></li>
+                        <li>Can play various <strong>Musical Instruments</strong></li>
+                    </ul>
+                </section>
+
+                <section class="languages">
+                    <h2>Languages</h2>
+                    <ul>
+                        <li>Nepali (Fluent)</li>
+                        <li>English (Fluent)</li>
+                        <li>Hindi (Fluent)</li>
+                        <li>Japanese (Basic)</li>
+                    </ul>
+                </section>
+
+                <section class="projects">
+                    <h2>Projects</h2>
+                    <p><strong>Portfolio Website</strong> — A simple portfolio website showcasing my web design skills using HTML, CSS, and JavaScript.</p>
+                </section>
+
+                <section class="awards">
+                    <h2>Awards and Achievements</h2>
+                    <ul>
+                        <li><strong>Academic Excellence Award</strong> — From Om Education Academy for outstanding academic performance.</li>
+                        <li><strong>Sports Awards</strong> — Awarded in Table Tennis and Quiz Competitions.</li>
+                        <li><strong>Dance Competition</strong> — Awarded a medal for winning an inter-school dance competition.</li>
+                    </ul>
+                </section>
+
+                <section class="interests">
+                    <h2>Interests</h2>
+                    <ul>
+                        <li>Painting</li>
+                        <li>Music and playing Musical Instruments</li>
+                        <li>Astronomy</li>
+                        <li>Programming</li>
+                    </ul>
+                </section>
+            </div>
+
+            <!-- Your Image Here -->
+            <div class="info-right">
+                <img src="./resume.png" alt="Sushan Kafle" class="profile-image">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Sushan Kafle. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

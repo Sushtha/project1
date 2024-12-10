@@ -1,0 +1,198 @@
+<html>
+<head>
+	<title>satoru</title>
+	<style type="text/css">
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: sans-serif;
+
+}
+  body{
+  	background: url(background.jpg);
+  }
+ .sushan{
+ 	width: 100%;
+ 	height: 100vh;
+ 	background-image: linear-
+ 	gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75));
+ 	background-size: cover;
+ 	background-position: center;
+ 	 }
+ 	 .navbar{
+ 	 	width: 85%;
+ 	 	margin: auto;
+ 	 	padding: 35px 0;
+ 	 	display: flex;
+ 	 	align-items: center;
+ 	 	justify-content: space-between;
+ 	 }
+ 	 .logo{
+ 	 	width: 180px;
+ 	 	cursor: pointer;
+ 	 }
+ 	 .navbar ul li{
+ 	 	list-style: none;
+ 	 	display: inline-block;
+ 	 	margin: 0 20px;
+ 	 	position: relative;
+ 	 }
+.navbar ul li a{
+	text-decoration: none;
+	color: #F9F9F4;
+	text-transform: uppercase;
+}
+.navbar ul li::after{
+	content: '';
+	height: 3px;
+	width: 0;
+	background: #F9F9F4;
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	transition: 0.5s;
+}
+.navbar ul li:hover::after{
+	width: 100%;
+}
+.content{
+
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+	color: aqua;
+}
+.content h1{
+	font-size: 70px;
+	margin-top: 80px;
+}
+.content p{
+	margin: 10px auto;
+	font-weight: 100;
+	line-height: 25px;
+}
+button{
+	width: 200px;
+	padding: 15px;
+	text-align: center;
+	margin: 20px;
+	border-radius: 25px;
+	font-weight: bold;
+	border:2px solid #5716A0;
+	background: transparent;
+	color: aqua;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+}
+span{
+	background: #5716A0;
+	height: 100%;
+	width:0;
+	border-radius: 25px;
+	position: absolute;
+	left: 0;
+	bottom: 0; 
+	z-index: -1;
+	transition: 0.5s;
+
+}
+button:hover span{
+	width: 100%;
+	-webkit-transform:rotate(360deg);
+}
+button:hover{
+	border:none;
+}
+.loader {
+  display: inline-grid;
+  width: 30px;
+  aspect-ratio: 1;
+  background: #white;
+  animation: 
+    l12-0 4s steps(4) infinite,
+    l12-1 6s linear infinite;
+}
+.loader:before,
+.loader:after {
+  content: "";
+  grid-area: 1/1;
+  background: #83988E;
+  clip-path: polygon(100% 50%,65.45% 97.55%,9.55% 79.39%,9.55% 20.61%,65.45% 2.45%);
+  transform-origin: right;
+  translate: -100% 50%;
+  scale: 1.7;
+  animation: l12-2 1s linear infinite;
+}
+.loader:after {
+  clip-path: polygon(90.45% 79.39%,34.55% 97.55%,0% 50%,34.55% 2.45%,90.45% 20.61%);
+  transform-origin: left;
+  translate: 100% -50%;
+}
+@keyframes l12-0 {
+  to{rotate: 1turn}
+}
+@keyframes l12-1 {
+  to{transform: rotate(1turn)}
+}
+@keyframes l12-2 {
+  0%{rotate:  36deg}
+  to{rotate: -126deg}
+}
+.loader2 {
+  width: 20px;
+  aspect-ratio: 1;
+  animation: l13-0 2s linear infinite;
+}
+.loader2::before,
+.loader2::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: radial-gradient(at 30% 30%,#0000,#000a) red;
+  animation: l13-1 0.5s cubic-bezier(.5,-500,.5,500) infinite;
+}
+.loader2::after {
+  animation-delay: -0.15s;
+}
+@keyframes l13-0 { 
+  100% { transform:rotate(360deg)} 
+}
+@keyframes l13-1 { 
+  100% { transform:translate(0.5px)} 
+}
+	</style>
+</head>
+<body>
+	<div class="sushan">
+		<div class="navbar">
+			<img src="logo.jpg" class="logo">
+			<ul><div class="wrapper-main">
+				<li><a href="#">HOME</a></li>
+				<li><a href="gallery.html">PHOTOS</li>
+				<li><a href="about me.html">ABOUT ME</a></li>
+				<li><a href="game.html">Game</a></li>	
+				<li><a href="loginform.html">LOGIN</a></li>
+				<li><a href="resume.html">RESUME</a></li>
+			</ul>
+		</div>
+		<div class="content">
+			<h1>MY PERSONAL PORTFOLIO</h1>
+			<p>This is a simple personal portfolio created by Sushan Kafle.<br>I hope you will like it.</p>
+			<div>
+				<button type="button"><span></span>Facebook.:Sushan Kafle</button>
+				<button type="button"><span></span>Instagram.:sushankafle22</button>
+				<button type="button"><span></span>Make sure to follow🤞</button>
+				<div class="loader"></div>
+				<div class="loader2"></div>
+
+			</div>
+			
+		</div>
+	</div>
+</div>
+</body>
+</html>

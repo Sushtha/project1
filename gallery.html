@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>photos</title>
+      <style>
+      	div{
+      		display: flex;
+      		justify-content: center;
+      		align-items: center;
+      		flex-wrap: wrap;
+      	}
+      	div img{
+      		width:400px;
+      		height: 300px;
+      		border-radius: 13px;
+      		border:2px solid #ff3d0036;
+      		box-shadow: 4px 7px 0px #00000042;
+      		cursor: pointer;
+      		margin: 10px;
+      		transition: 400ms;
+      	}
+      	div img:hover {
+      		filter: drop-shadow(1);
+      		transform: scale(1.03);
+
+      	}
+      	div video{
+      		width:400px;
+      		height: 300px;
+      		border-radius: 13px;
+      		border:2px solid #ff3d0036;
+      		box-shadow: 4px 7px 0px #00000042;
+      		cursor: pointer;
+      		margin: 10px;
+      		transition: 400ms;
+
+      	}
+      	.navbar{
+ 	 	width: 100%;
+ 	 	margin: auto;
+ 	 	padding: 25px 0;
+ 	 	display: flex;
+ 	 	align-items: center;
+ 	 	justify-content: space-between;
+ 	 }
+      .navbar ul li{
+ 	 	list-style: none;
+ 	 	display: inline-block;
+ 	 	margin: 0 20px;
+ 	 	position: relative;
+ 	 }
+.navbar ul li a{
+	text-decoration: none;
+	color: aqua;
+	text-transform: uppercase;
+}
+.navbar ul li::after{
+	content: '';
+	height: 5px;
+	width: 0;
+	background:black;
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	transition: 0.5s;
+}
+.navbar ul li:hover::after{
+	width: 100%;
+} 
+h1{
+	font-family: cursive;
+	color:black;}
+	p {
+		font-size: 30px;
+	}
+	b{
+		 color: yellow;
+	}
+	/* HTML: <div class="loader"></div> */
+.loader {
+  width: 80px;
+  aspect-ratio: 1;
+  background: 
+    radial-gradient(farthest-side at top,#0000 calc(100% - 21px),lightblue calc(100% - 20px) 99%,#0000) bottom/100% 50%,
+    radial-gradient(farthest-side,lightblue 94%,#0000 ) left /20px 20px,
+    radial-gradient(farthest-side,lightblue 94%,#0000 ) right/20px 20px;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.loader::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  inset: auto 0 0;
+  margin: auto;
+  border-radius: 50%;
+  background: orange;
+  transform-origin: 50% -20px;
+  animation: l14 1s infinite cubic-bezier(0.5,623,0.5,-623);
+}
+@keyframes l14 { 
+ 100% {transform: rotate(0.5deg)}
+}
+
+.loader1 {
+  width: 120px;
+  height: 20px;
+  -webkit-mask: radial-gradient(circle closest-side,#000 94%,#0000) left/20% 100%;
+  background: linear-gradient(#000 0 0) left/0% 100% no-repeat #ddd;
+  animation: l17 2s infinite steps(6);
+}
+@keyframes l17 {
+    100% {background-size:120% 100%}
+}
+
+  </style>
+</head>
+<body bgcolor="#f99884">
+		<div class="navbar">
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="#">PHOTOS</li>
+				<li><a href="about me.html">ABOUT ME</a></li>
+				<li><a href="game.html">Game</a></li>	
+				<li><a href="loginform.html">LOGIN</a></li>
+				<li><a href="resume.html">RESUME</a></li>
+			</ul>
+		</div>	
+		<h1><u>MEMORIES</u></h1>
+		<p>Memories are my favorite place to be.The kind of bliss lost in the passage of time.<div class="loader1"></div>
+	<div>
+	<img src="./images/sh2.jpg">
+	<img src="./images/yoho.jpeg">
+	<img src="./images/test1.jpeg">
+	<img src="./images/t2.jpg">
+	<img src="./images/received_1499328180955378.jpeg">
+	<img src="./images/Image015.jpg">
+	<img src="./images/bhak.jpeg">
+	<img src="./images/sh1.jpg">
+	<img src="./images/siru.jpeg">
+	<img src="./images/mama.jpeg">
+	<img src="./images/maili.jpeg">
+	<img src="./images/about.jpeg">
+	<img src="./images/s2.jpg">
+	<img src="./images/c1.jpg">
+	<img src="./images/c2.jpg">
+	<img src="./images/b1.jpg">
+	<img src="./images/b2.jpeg">
+	<img src="./images/d1.jpg">
+	<img src="./images/d2.jpg">
+	<img src="./images/d3.jpg">
+	<img src="./images/d4.jpg">
+	<img src="./images/d5.jpg">
+	<img src="./images/d6.jpg">
+	<img src="./images/d7.jpg">
+	<img src="./images/d8.jpeg">
+	<video controls >
+		<source src="./images/v1.mp4" type="video/mp4">
+	</video>
+	<video controls >
+		<source src="./images/v2.mp4" type="video/mp4">
+	</video>
+	<video controls >
+		<source src="./images/v3.mp4" type="video/mp4">
+	</video>
+	<div class="loader"></div>
+		</body>
+	   </html>
